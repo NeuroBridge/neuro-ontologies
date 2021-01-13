@@ -1,0 +1,430 @@
+@prefix DBfN: <http://maven.renci.org/ontologies/databridgeforneuroscience/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+DBfN:AIMS a owl:Class ;
+    rdfs:label "AIMS" ;
+    rdfs:comment "AIMS" ;
+    rdfs:subClassOf DBfN:Extrapyramidal_Symptoms .
+
+DBfN:Annett_Scale_of_Hand_Preference a owl:Class ;
+    rdfs:label "Annett_Scale_of_Hand_Preference" ;
+    rdfs:comment "Annett_Scale_of_Hand_Preference" ;
+    rdfs:subClassOf DBfN:Handedness .
+
+DBfN:BARS a owl:Class ;
+    rdfs:label "BARS" ;
+    rdfs:comment "BARS" ;
+    rdfs:subClassOf DBfN:Extrapyramidal_Symptoms .
+
+DBfN:BIF a owl:Class ;
+    rdfs:label "BIF" ;
+    rdfs:comment "BIF" ;
+    rdfs:subClassOf DBfN:Demographics_MCIC .
+
+DBfN:BPRS a owl:Class ;
+    rdfs:label "BPRS" ;
+    rdfs:comment "BPRS" ;
+    rdfs:subClassOf DBfN:Psychopathology .
+
+DBfN:CAL a owl:Class ;
+    rdfs:label "CAL" ;
+    rdfs:comment "CAL" ;
+    rdfs:subClassOf DBfN:Depression .
+
+DBfN:CASH a owl:Class ;
+    rdfs:label "CASH" ;
+    rdfs:comment "CASH" ;
+    rdfs:subClassOf DBfN:Demographics_MCIC .
+
+DBfN:CBIF a owl:Class ;
+    rdfs:label "CBIF" ;
+    rdfs:comment "CBIF" ;
+    rdfs:subClassOf DBfN:Demographics_MCIC .
+
+DBfN:CGI a owl:Class ;
+    rdfs:label "CGI" ;
+    rdfs:comment "CGI" ;
+    rdfs:subClassOf DBfN:Progress_Treatment_Response .
+
+DBfN:Chapman_Psychosis_Proneness a owl:Class ;
+    rdfs:label "Chapman_Psychosis_Proneness" ;
+    rdfs:comment "Chapman_Psychosis_Proneness" ;
+    rdfs:subClassOf DBfN:Psychopathology .
+
+DBfN:Demographics_COBRE a owl:Class ;
+    rdfs:label "Demographics_COBRE" ;
+    rdfs:comment "Demographics_COBRE" ;
+    rdfs:subClassOf DBfN:Demographics .
+
+DBfN:Demographics_FBIRN a owl:Class ;
+    rdfs:label "Demographics_FBIRN" ;
+    rdfs:comment "Demographics_FBIRN" ;
+    rdfs:subClassOf DBfN:Demographics .
+
+DBfN:Demographics_NUSDAST a owl:Class ;
+    rdfs:label "Demographics_NUSDAST" ;
+    rdfs:comment "Demographics_NUSDAST" ;
+    rdfs:subClassOf DBfN:Demographics .
+
+DBfN:Demographics_Neuromorph a owl:Class ;
+    rdfs:label "Demographics_Neuromorph" ;
+    rdfs:comment "Demographics_Neuromorph" ;
+    rdfs:subClassOf DBfN:Demographics .
+
+DBfN:EHI a owl:Class ;
+    rdfs:label "EHI" ;
+    rdfs:comment "EHI" ;
+    rdfs:subClassOf DBfN:Handedness .
+
+DBfN:ESRS a owl:Class ;
+    rdfs:label "ESRS" ;
+    rdfs:comment "ESRS" ;
+    rdfs:subClassOf DBfN:Extrapyramidal_Symptoms .
+
+DBfN:FTND a owl:Class ;
+    rdfs:label "FTND" ;
+    rdfs:comment "FTND" ;
+    rdfs:subClassOf DBfN:Nicotine_Addiction,
+        DBfN:Nicotine_Dependence .
+
+DBfN:Fagerstrom a owl:Class ;
+    rdfs:label "Fagerstrom" ;
+    rdfs:comment "Fagerstrom" ;
+    rdfs:subClassOf DBfN:Nicotine_Addiction .
+
+DBfN:Genetic_Risk_Criteria_Eligibility_Criteria a owl:Class ;
+    rdfs:label "Genetic_Risk_Criteria_Eligibility_Criteria" ;
+    rdfs:comment "Genetic_Risk_Criteria_Eligibility_Criteria" ;
+    rdfs:subClassOf DBfN:Genetic_Risk .
+
+DBfN:Hallucination a owl:Class ;
+    rdfs:label "Hallucination" ;
+    rdfs:comment "Hallucination" ;
+    rdfs:subClassOf DBfN:Hallucination_Type .
+
+DBfN:ISST a owl:Class ;
+    rdfs:label "ISST" ;
+    rdfs:comment "ISST" ;
+    rdfs:subClassOf DBfN:Suicidal_Ideation .
+
+DBfN:Lifetime_Psychopathology a owl:Class ;
+    rdfs:label "Lifetime_Psychopathology" ;
+    rdfs:comment "Lifetime_Psychopathology" ;
+    rdfs:subClassOf DBfN:Psychopathology .
+
+DBfN:MADRS a owl:Class ;
+    rdfs:label "MADRS" ;
+    rdfs:comment "MADRS" ;
+    rdfs:subClassOf DBfN:Depression .
+
+DBfN:Medical_History a owl:Class ;
+    rdfs:label "Medical_History" ;
+    rdfs:comment "Medical_History" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Medication_Log a owl:Class ;
+    rdfs:label "Medication_Log" ;
+    rdfs:comment "Medication_Log" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Motor_Skill_History a owl:Class ;
+    rdfs:label "Motor_Skill_History" ;
+    rdfs:comment "Motor_Skill_History" ;
+    rdfs:subClassOf DBfN:Functional_Capacity .
+
+DBfN:NSA a owl:Class ;
+    rdfs:label "NSA" ;
+    rdfs:comment "NSA" ;
+    rdfs:subClassOf DBfN:Negative_Symptoms .
+
+DBfN:Neuroleptic_Naive a owl:Class ;
+    rdfs:label "Neuroleptic_Naive" ;
+    rdfs:comment "Neuroleptic_Naive" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Neurological_Exam a owl:Class ;
+    rdfs:label "Neurological_Exam" ;
+    rdfs:comment "Neurological_Exam" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:PANSS a owl:Class ;
+    rdfs:label "PANSS" ;
+    rdfs:comment "PANSS" ;
+    rdfs:subClassOf DBfN:Positive_Negative_Symptom,
+        DBfN:Positive_Negative_Symptoms .
+
+DBfN:Perinatal_Form a owl:Class ;
+    rdfs:label "Perinatal_Form" ;
+    rdfs:comment "Perinatal_Form" ;
+    rdfs:subClassOf DBfN:Perinatal .
+
+DBfN:Perinatal_Risk_Factor a owl:Class ;
+    rdfs:label "Perinatal_Risk_Factor" ;
+    rdfs:comment "Perinatal_Risk_Factor" ;
+    rdfs:subClassOf DBfN:Perinatal .
+
+DBfN:QMS a owl:Class ;
+    rdfs:label "QMS" ;
+    rdfs:comment "QMS" ;
+    rdfs:subClassOf DBfN:Mood .
+
+DBfN:QOL a owl:Class ;
+    rdfs:label "QOL" ;
+    rdfs:comment "QOL" ;
+    rdfs:subClassOf DBfN:Quality_of_Life .
+
+DBfN:Registration_NUSDAST a owl:Class ;
+    rdfs:label "Registration_NUSDAST" ;
+    rdfs:comment "Registration_NUSDAST" ;
+    rdfs:subClassOf DBfN:Demographics .
+
+DBfN:Registration_Neuromorph a owl:Class ;
+    rdfs:label "Registration_Neuromorph" ;
+    rdfs:comment "Registration_Neuromorph" ;
+    rdfs:subClassOf DBfN:Demographics .
+
+DBfN:Relationship_NUSDAST a owl:Class ;
+    rdfs:label "Relationship_NUSDAST" ;
+    rdfs:comment "Relationship_NUSDAST" ;
+    rdfs:subClassOf DBfN:Demographics .
+
+DBfN:SANS a owl:Class ;
+    rdfs:label "SANS" ;
+    rdfs:comment "SANS" ;
+    rdfs:subClassOf DBfN:Negative_Symptoms .
+
+DBfN:SAPS a owl:Class ;
+    rdfs:label "SAPS" ;
+    rdfs:comment "SAPS" ;
+    rdfs:subClassOf DBfN:Positive_Symptoms .
+
+DBfN:SAS a owl:Class ;
+    rdfs:label "SAS" ;
+    rdfs:comment "SAS" ;
+    rdfs:subClassOf DBfN:Extrapyramidal_Symptoms .
+
+DBfN:SCIDIP a owl:Class ;
+    rdfs:label "SCIDIP" ;
+    rdfs:comment "SCIDIP" ;
+    rdfs:subClassOf DBfN:Mental_Health_Diagnosis .
+
+DBfN:SCIDNP a owl:Class ;
+    rdfs:label "SCIDNP" ;
+    rdfs:comment "SCIDNP" ;
+    rdfs:subClassOf DBfN:Mental_Health_Diagnosis .
+
+DBfN:SCIDP a owl:Class ;
+    rdfs:label "SCIDP" ;
+    rdfs:comment "SCIDP" ;
+    rdfs:subClassOf DBfN:Mental_Health_Diagnosis .
+
+DBfN:SCIDPM a owl:Class ;
+    rdfs:label "SCIDPM" ;
+    rdfs:comment "SCIDPM" ;
+    rdfs:subClassOf DBfN:Mental_Health_Diagnosis .
+
+DBfN:SCID_II_Summary a owl:Class ;
+    rdfs:label "SCID_II_Summary" ;
+    rdfs:comment "SCID_II_Summary" ;
+    rdfs:subClassOf DBfN:Mental_Health_Diagnosis .
+
+DBfN:SCID_Summary a owl:Class ;
+    rdfs:label "SCID_Summary" ;
+    rdfs:comment "SCID_Summary" ;
+    rdfs:subClassOf DBfN:Mental_Health_Diagnosis .
+
+DBfN:SDS a owl:Class ;
+    rdfs:label "SDS" ;
+    rdfs:comment "SDS" ;
+    rdfs:subClassOf DBfN:Deficit_Syndrome,
+        DBfN:Negative_Symptoms .
+
+DBfN:SIPS a owl:Class ;
+    rdfs:label "SIPS" ;
+    rdfs:comment "SIPS" ;
+    rdfs:subClassOf DBfN:Prodromal_Symptoms .
+
+DBfN:SRS a owl:Class ;
+    rdfs:label "SRS" ;
+    rdfs:comment "SRS" ;
+    rdfs:subClassOf DBfN:Social_Responsiveness .
+
+DBfN:SUMD a owl:Class ;
+    rdfs:label "SUMD" ;
+    rdfs:comment "SUMD" ;
+    rdfs:subClassOf DBfN:Insight .
+
+DBfN:SchizoBipolar_Scale a owl:Class ;
+    rdfs:label "SchizoBipolar_Scale" ;
+    rdfs:comment "SchizoBipolar_Scale" ;
+    rdfs:subClassOf DBfN:Psychopathology .
+
+DBfN:Schizotypal_Symptoms a owl:Class ;
+    rdfs:label "Schizotypal_Symptoms" ;
+    rdfs:comment "Schizotypal_Symptoms" ;
+    rdfs:subClassOf DBfN:Genetic_Risk .
+
+DBfN:Socioeconomic_Status a owl:Class ;
+    rdfs:label "Socioeconomic_Status" ;
+    rdfs:comment "Socioeconomic_Status" ;
+    rdfs:subClassOf DBfN:Demographics .
+
+DBfN:TCI a owl:Class ;
+    rdfs:label "TCI" ;
+    rdfs:comment "TCI" ;
+    rdfs:subClassOf DBfN:Personality .
+
+DBfN:UPSA a owl:Class ;
+    rdfs:label "UPSA" ;
+    rdfs:comment "UPSA" ;
+    rdfs:subClassOf DBfN:Functional_Capacity .
+
+DBfN:YMRS a owl:Class ;
+    rdfs:label "YMRS" ;
+    rdfs:comment "YMRS" ;
+    rdfs:subClassOf DBfN:Severity_Manic_Episodes .
+
+DBfN:Deficit_Syndrome a owl:Class ;
+    rdfs:label "Deficit_Syndrome" ;
+    rdfs:comment "Deficit_Syndrome" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Hallucination_Type a owl:Class ;
+    rdfs:label "Hallucination_Type" ;
+    rdfs:comment "Hallucination_Type" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Insight a owl:Class ;
+    rdfs:label "Insight" ;
+    rdfs:comment "Insight" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Mood a owl:Class ;
+    rdfs:label "Mood" ;
+    rdfs:comment "Mood" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Nicotine_Dependence a owl:Class ;
+    rdfs:label "Nicotine_Dependence" ;
+    rdfs:comment "Nicotine_Dependence" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Personality a owl:Class ;
+    rdfs:label "Personality" ;
+    rdfs:comment "Personality" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Positive_Negative_Symptom a owl:Class ;
+    rdfs:label "Positive_Negative_Symptom" ;
+    rdfs:comment "Positive_Negative_Symptom" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Positive_Negative_Symptoms a owl:Class ;
+    rdfs:label "Positive_Negative_Symptoms" ;
+    rdfs:comment "Positive_Negative_Symptoms" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Positive_Symptoms a owl:Class ;
+    rdfs:label "Positive_Symptoms" ;
+    rdfs:comment "Positive_Symptoms" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Prodromal_Symptoms a owl:Class ;
+    rdfs:label "Prodromal_Symptoms" ;
+    rdfs:comment "Prodromal_Symptoms" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Progress_Treatment_Response a owl:Class ;
+    rdfs:label "Progress_Treatment_Response" ;
+    rdfs:comment "Progress_Treatment_Response" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Quality_of_Life a owl:Class ;
+    rdfs:label "Quality_of_Life" ;
+    rdfs:comment "Quality_of_Life" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Severity_Manic_Episodes a owl:Class ;
+    rdfs:label "Severity_Manic_Episodes" ;
+    rdfs:comment "Severity_Manic_Episodes" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Social_Responsiveness a owl:Class ;
+    rdfs:label "Social_Responsiveness" ;
+    rdfs:comment "Social_Responsiveness" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Suicidal_Ideation a owl:Class ;
+    rdfs:label "Suicidal_Ideation" ;
+    rdfs:comment "Suicidal_Ideation" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Depression a owl:Class ;
+    rdfs:label "Depression" ;
+    rdfs:comment "Depression" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Functional_Capacity a owl:Class ;
+    rdfs:label "Functional_Capacity" ;
+    rdfs:comment "Functional_Capacity" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Genetic_Risk a owl:Class ;
+    rdfs:label "Genetic_Risk" ;
+    rdfs:comment "Genetic_Risk" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Handedness a owl:Class ;
+    rdfs:label "Handedness" ;
+    rdfs:comment "Handedness" ;
+    rdfs:subClassOf DBfN:Demographics .
+
+DBfN:Nicotine_Addiction a owl:Class ;
+    rdfs:label "Nicotine_Addiction" ;
+    rdfs:comment "Nicotine_Addiction" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Perinatal a owl:Class ;
+    rdfs:label "Perinatal" ;
+    rdfs:comment "Perinatal" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Demographics_MCIC a owl:Class ;
+    rdfs:label "Demographics_MCIC" ;
+    rdfs:comment "Demographics_MCIC" ;
+    rdfs:subClassOf DBfN:Demographics .
+
+DBfN:Negative_Symptoms a owl:Class ;
+    rdfs:label "Negative_Symptoms" ;
+    rdfs:comment "Negative_Symptoms" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Extrapyramidal_Symptoms a owl:Class ;
+    rdfs:label "Extrapyramidal_Symptoms" ;
+    rdfs:comment "Extrapyramidal_Symptoms" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Psychopathology a owl:Class ;
+    rdfs:label "Psychopathology" ;
+    rdfs:comment "Psychopathology" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Mental_Health_Diagnosis a owl:Class ;
+    rdfs:label "Mental_Health_Diagnosis" ;
+    rdfs:comment "Mental_Health_Diagnosis" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Demographics a owl:Class ;
+    rdfs:label "Demographics" ;
+    rdfs:comment "Demographics" ;
+    rdfs:subClassOf DBfN:Clinical .
+
+DBfN:Clinical a owl:Class ;
+    rdfs:label "Clinical" ;
+    rdfs:comment "Highest level of ontology" ;
+    rdfs:subClassOf owl:Thing .
+
