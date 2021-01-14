@@ -612,10 +612,10 @@ DBfN:YMRS rdf:type owl:Class ;
                                                              rdfs:label "Breath_Hold" .
 
 
-###  http://maven.renci.org/ontologies/neurobridge/#Difusion
-<http://maven.renci.org/ontologies/neurobridge/#Difusion> rdf:type owl:Class ;
-                                                          rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Structural> ;
-                                                          rdfs:label "Difusion" .
+###  http://maven.renci.org/ontologies/neurobridge/#Diffusion
+<http://maven.renci.org/ontologies/neurobridge/#Diffusion> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Structural> ;
+                                                           rdfs:label "Diffusion" .
 
 
 ###  http://maven.renci.org/ontologies/neurobridge/#FLASH
