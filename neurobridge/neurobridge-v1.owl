@@ -1,0 +1,716 @@
+@prefix : <http://maven.renci.org/ontologies/neurobridg#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix DBfN: <http://maven.renci.org/ontologies/databridgeforneuroscience/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://maven.renci.org/ontologies/neurobridge> .
+
+<http://maven.renci.org/ontologies/neurobridge> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/AIMS
+DBfN:AIMS rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Extrapyramidal_Symptoms ;
+          rdfs:comment "AIMS" ;
+          rdfs:label "AIMS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Annett_Scale_of_Hand_Preference
+DBfN:Annett_Scale_of_Hand_Preference rdf:type owl:Class ;
+                                     rdfs:subClassOf DBfN:Handedness ;
+                                     rdfs:comment "Annett_Scale_of_Hand_Preference" ;
+                                     rdfs:label "Annett_Scale_of_Hand_Preference" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/BARS
+DBfN:BARS rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Extrapyramidal_Symptoms ;
+          rdfs:comment "BARS" ;
+          rdfs:label "BARS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/BIF
+DBfN:BIF rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Demographics_MCIC ;
+         rdfs:comment "BIF" ;
+         rdfs:label "BIF" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/BPRS
+DBfN:BPRS rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Psychopathology ;
+          rdfs:comment "BPRS" ;
+          rdfs:label "BPRS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/CAL
+DBfN:CAL rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Depression ;
+         rdfs:comment "CAL" ;
+         rdfs:label "CAL" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/CASH
+DBfN:CASH rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Demographics_MCIC ;
+          rdfs:comment "CASH" ;
+          rdfs:label "CASH" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/CBIF
+DBfN:CBIF rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Demographics_MCIC ;
+          rdfs:comment "CBIF" ;
+          rdfs:label "CBIF" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/CGI
+DBfN:CGI rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Progress_Treatment_Response ;
+         rdfs:comment "CGI" ;
+         rdfs:label "CGI" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Chapman_Psychosis_Proneness
+DBfN:Chapman_Psychosis_Proneness rdf:type owl:Class ;
+                                 rdfs:subClassOf DBfN:Psychopathology ;
+                                 rdfs:comment "Chapman_Psychosis_Proneness" ;
+                                 rdfs:label "Chapman_Psychosis_Proneness" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Clinical
+DBfN:Clinical rdf:type owl:Class ;
+              rdfs:subClassOf owl:Thing ;
+              rdfs:comment "Highest level of ontology" ;
+              rdfs:label "Clinical" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Demographics
+DBfN:Demographics rdf:type owl:Class ;
+                  rdfs:subClassOf DBfN:Clinical ;
+                  rdfs:comment "Demographics" ;
+                  rdfs:label "Demographics" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Demographics_COBRE
+DBfN:Demographics_COBRE rdf:type owl:Class ;
+                        rdfs:subClassOf DBfN:Demographics ;
+                        rdfs:comment "Demographics_COBRE" ;
+                        rdfs:label "Demographics_COBRE" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Demographics_ConteTT
+DBfN:Demographics_ConteTT rdf:type owl:Class ;
+                          rdfs:subClassOf DBfN:Demographics ;
+                          rdfs:comment "Demographics_ConteTT" ;
+                          rdfs:label "Demographics_ConteTT" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Demographics_MCIC
+DBfN:Demographics_MCIC rdf:type owl:Class ;
+                       rdfs:subClassOf DBfN:Demographics ;
+                       rdfs:comment "Demographics_MCIC" ;
+                       rdfs:label "Demographics_MCIC" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Demographics_NUSDAST
+DBfN:Demographics_NUSDAST rdf:type owl:Class ;
+                          rdfs:subClassOf DBfN:Demographics ;
+                          rdfs:comment "Demographics_NUSDAST" ;
+                          rdfs:label "Demographics_NUSDAST" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Demographics_Neuromorph
+DBfN:Demographics_Neuromorph rdf:type owl:Class ;
+                             rdfs:subClassOf DBfN:Demographics ;
+                             rdfs:comment "Demographics_Neuromorph" ;
+                             rdfs:label "Demographics_Neuromorph" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Demographics_fBIRNPhaseIII__0090
+DBfN:Demographics_fBIRNPhaseIII__0090 rdf:type owl:Class ;
+                                      rdfs:subClassOf DBfN:Demographics ;
+                                      rdfs:comment "Demographics_fBIRNPhaseIII__0090" ;
+                                      rdfs:label "Demographics_fBIRNPhaseIII__0090" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Depression
+DBfN:Depression rdf:type owl:Class ;
+                rdfs:subClassOf DBfN:Clinical ;
+                rdfs:comment "Depression" ;
+                rdfs:label "Depression" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/EHI
+DBfN:EHI rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Handedness ;
+         rdfs:comment "EHI" ;
+         rdfs:label "EHI" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/ESRS
+DBfN:ESRS rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Extrapyramidal_Symptoms ;
+          rdfs:comment "ESRS" ;
+          rdfs:label "ESRS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Extrapyramidal_Symptoms
+DBfN:Extrapyramidal_Symptoms rdf:type owl:Class ;
+                             rdfs:subClassOf DBfN:Clinical ;
+                             rdfs:comment "Extrapyramidal_Symptoms" ;
+                             rdfs:label "Extrapyramidal_Symptoms" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Fagerstrom
+DBfN:Fagerstrom rdf:type owl:Class ;
+                rdfs:subClassOf DBfN:Nicotine_Dependence ;
+                rdfs:comment "Fagerstrom" ;
+                rdfs:label "Fagerstrom" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Functional_Capacity
+DBfN:Functional_Capacity rdf:type owl:Class ;
+                         rdfs:subClassOf DBfN:Clinical ;
+                         rdfs:comment "Functional_Capacity" ;
+                         rdfs:label "Functional_Capacity" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Genetic_Risk
+DBfN:Genetic_Risk rdf:type owl:Class ;
+                  rdfs:subClassOf DBfN:Clinical ;
+                  rdfs:comment "Genetic_Risk" ;
+                  rdfs:label "Genetic_Risk" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Genetic_Risk_Criteria_Eligibility_Criteria
+DBfN:Genetic_Risk_Criteria_Eligibility_Criteria rdf:type owl:Class ;
+                                                rdfs:subClassOf DBfN:Genetic_Risk ;
+                                                rdfs:comment "Genetic_Risk_Criteria_Eligibility_Criteria" ;
+                                                rdfs:label "Genetic_Risk_Criteria_Eligibility_Criteria" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Hallucination
+DBfN:Hallucination rdf:type owl:Class ;
+                   rdfs:subClassOf DBfN:Hallucination_Type ;
+                   rdfs:comment "Hallucination" ;
+                   rdfs:label "Hallucination" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Hallucination_Type
+DBfN:Hallucination_Type rdf:type owl:Class ;
+                        rdfs:subClassOf DBfN:Clinical ;
+                        rdfs:comment "Hallucination_Type" ;
+                        rdfs:label "Hallucination_Type" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Handedness
+DBfN:Handedness rdf:type owl:Class ;
+                rdfs:subClassOf DBfN:Demographics ;
+                rdfs:comment "Handedness" ;
+                rdfs:label "Handedness" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/ISST
+DBfN:ISST rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Suicidal_Ideation ;
+          rdfs:comment "ISST" ;
+          rdfs:label "ISST" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Insight
+DBfN:Insight rdf:type owl:Class ;
+             rdfs:subClassOf DBfN:Clinical ;
+             rdfs:comment "Insight" ;
+             rdfs:label "Insight" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Lifetime_Psychopathology
+DBfN:Lifetime_Psychopathology rdf:type owl:Class ;
+                              rdfs:subClassOf DBfN:Psychopathology ;
+                              rdfs:comment "Lifetime_Psychopathology" ;
+                              rdfs:label "Lifetime_Psychopathology" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/MADRS
+DBfN:MADRS rdf:type owl:Class ;
+           rdfs:subClassOf DBfN:Depression ;
+           rdfs:comment "MADRS" ;
+           rdfs:label "MADRS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Medical_History
+DBfN:Medical_History rdf:type owl:Class ;
+                     rdfs:subClassOf DBfN:Clinical ;
+                     rdfs:comment "Medical_History" ;
+                     rdfs:label "Medical_History" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Medication_Log
+DBfN:Medication_Log rdf:type owl:Class ;
+                    rdfs:subClassOf DBfN:Clinical ;
+                    rdfs:comment "Medication_Log" ;
+                    rdfs:label "Medication_Log" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Mental_Health_Diagnosis
+DBfN:Mental_Health_Diagnosis rdf:type owl:Class ;
+                             rdfs:subClassOf DBfN:Clinical ;
+                             rdfs:comment "Mental_Health_Diagnosis" ;
+                             rdfs:label "Mental_Health_Diagnosis" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Mood
+DBfN:Mood rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Clinical ;
+          rdfs:comment "Mood" ;
+          rdfs:label "Mood" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Motor_Skill_History
+DBfN:Motor_Skill_History rdf:type owl:Class ;
+                         rdfs:subClassOf DBfN:Functional_Capacity ;
+                         rdfs:comment "Motor_Skill_History" ;
+                         rdfs:label "Motor_Skill_History" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/NSA
+DBfN:NSA rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Negative_Symptoms ;
+         rdfs:comment "NSA" ;
+         rdfs:label "NSA" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Negative_Symptoms
+DBfN:Negative_Symptoms rdf:type owl:Class ;
+                       rdfs:subClassOf DBfN:Positive_Negative_Symptoms ;
+                       rdfs:comment "Negative_Symptoms" ;
+                       rdfs:label "Negative_Symptoms" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Neuroleptic_Naive
+DBfN:Neuroleptic_Naive rdf:type owl:Class ;
+                       rdfs:subClassOf DBfN:Clinical ;
+                       rdfs:comment "Neuroleptic_Naive" ;
+                       rdfs:label "Neuroleptic_Naive" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Neurological_Exam
+DBfN:Neurological_Exam rdf:type owl:Class ;
+                       rdfs:subClassOf DBfN:Clinical ;
+                       rdfs:comment "Neurological_Exam" ;
+                       rdfs:label "Neurological_Exam" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Nicotine_Dependence
+DBfN:Nicotine_Dependence rdf:type owl:Class ;
+                         rdfs:subClassOf DBfN:Clinical ;
+                         rdfs:comment "Nicotine_Dependence" ;
+                         rdfs:label "Nicotine_Dependence" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/PANSS
+DBfN:PANSS rdf:type owl:Class ;
+           rdfs:subClassOf DBfN:Positive_Negative_Symptoms ;
+           rdfs:comment "PANSS" ;
+           rdfs:label "PANSS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Perinatal
+DBfN:Perinatal rdf:type owl:Class ;
+               rdfs:subClassOf DBfN:Clinical ;
+               rdfs:comment "Perinatal" ;
+               rdfs:label "Perinatal" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Perinatal_Form
+DBfN:Perinatal_Form rdf:type owl:Class ;
+                    rdfs:subClassOf DBfN:Perinatal ;
+                    rdfs:comment "Perinatal_Form" ;
+                    rdfs:label "Perinatal_Form" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Perinatal_Risk_Factor
+DBfN:Perinatal_Risk_Factor rdf:type owl:Class ;
+                           rdfs:subClassOf DBfN:Perinatal ;
+                           rdfs:comment "Perinatal_Risk_Factor" ;
+                           rdfs:label "Perinatal_Risk_Factor" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Personality
+DBfN:Personality rdf:type owl:Class ;
+                 rdfs:subClassOf DBfN:Clinical ;
+                 rdfs:comment "Personality" ;
+                 rdfs:label "Personality" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Positive_Negative_Symptoms
+DBfN:Positive_Negative_Symptoms rdf:type owl:Class ;
+                                rdfs:subClassOf DBfN:Clinical ;
+                                rdfs:comment "Positive_Negative_Symptoms" ;
+                                rdfs:label "Positive_Negative_Symptoms" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Positive_Symptoms
+DBfN:Positive_Symptoms rdf:type owl:Class ;
+                       rdfs:subClassOf DBfN:Positive_Negative_Symptoms ;
+                       rdfs:comment "Positive_Symptoms" ;
+                       rdfs:label "Positive_Symptoms" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Prodromal_Symptoms
+DBfN:Prodromal_Symptoms rdf:type owl:Class ;
+                        rdfs:subClassOf DBfN:Clinical ;
+                        rdfs:comment "Prodromal_Symptoms" ;
+                        rdfs:label "Prodromal_Symptoms" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Progress_Treatment_Response
+DBfN:Progress_Treatment_Response rdf:type owl:Class ;
+                                 rdfs:subClassOf DBfN:Clinical ;
+                                 rdfs:comment "Progress_Treatment_Response" ;
+                                 rdfs:label "Progress_Treatment_Response" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Psychopathology
+DBfN:Psychopathology rdf:type owl:Class ;
+                     rdfs:subClassOf DBfN:Clinical ;
+                     rdfs:comment "Psychopathology" ;
+                     rdfs:label "Psychopathology" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/QMS
+DBfN:QMS rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Mood ;
+         rdfs:comment "QMS" ;
+         rdfs:label "QMS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/QOL
+DBfN:QOL rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Quality_of_Life ;
+         rdfs:comment "QOL" ;
+         rdfs:label "QOL" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Quality_of_Life
+DBfN:Quality_of_Life rdf:type owl:Class ;
+                     rdfs:subClassOf DBfN:Clinical ;
+                     rdfs:comment "Quality_of_Life" ;
+                     rdfs:label "Quality_of_Life" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Registration_ConteTT
+DBfN:Registration_ConteTT rdf:type owl:Class ;
+                          rdfs:subClassOf DBfN:Demographics ;
+                          rdfs:comment "Registration_ConteTT" ;
+                          rdfs:label "Registration_ConteTT" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Registration_NUSDAST
+DBfN:Registration_NUSDAST rdf:type owl:Class ;
+                          rdfs:subClassOf DBfN:Demographics ;
+                          rdfs:comment "Registration_NUSDAST" ;
+                          rdfs:label "Registration_NUSDAST" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Registration_Neuromorph
+DBfN:Registration_Neuromorph rdf:type owl:Class ;
+                             rdfs:subClassOf DBfN:Demographics ;
+                             rdfs:comment "Registration_Neuromorph" ;
+                             rdfs:label "Registration_Neuromorph" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Relationship_ConteTT
+DBfN:Relationship_ConteTT rdf:type owl:Class ;
+                          rdfs:subClassOf DBfN:Demographics ;
+                          rdfs:comment "Relationship_ConteTT" ;
+                          rdfs:label "Relationship_ConteTT" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Relationship_NUSDAST
+DBfN:Relationship_NUSDAST rdf:type owl:Class ;
+                          rdfs:subClassOf DBfN:Demographics ;
+                          rdfs:comment "Relationship_NUSDAST" ;
+                          rdfs:label "Relationship_NUSDAST" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SANS
+DBfN:SANS rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Negative_Symptoms ;
+          rdfs:comment "SANS" ;
+          rdfs:label "SANS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SAPS
+DBfN:SAPS rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Positive_Symptoms ;
+          rdfs:comment "SAPS" ;
+          rdfs:label "SAPS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SAS
+DBfN:SAS rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Extrapyramidal_Symptoms ;
+         rdfs:comment "SAS" ;
+         rdfs:label "SAS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SCIDIP
+DBfN:SCIDIP rdf:type owl:Class ;
+            rdfs:subClassOf DBfN:Mental_Health_Diagnosis ;
+            rdfs:comment "SCIDIP" ;
+            rdfs:label "SCIDIP" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SCIDNP
+DBfN:SCIDNP rdf:type owl:Class ;
+            rdfs:subClassOf DBfN:Mental_Health_Diagnosis ;
+            rdfs:comment "SCIDNP" ;
+            rdfs:label "SCIDNP" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SCIDP
+DBfN:SCIDP rdf:type owl:Class ;
+           rdfs:subClassOf DBfN:Mental_Health_Diagnosis ;
+           rdfs:comment "SCIDP" ;
+           rdfs:label "SCIDP" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SCIDPM
+DBfN:SCIDPM rdf:type owl:Class ;
+            rdfs:subClassOf DBfN:Mental_Health_Diagnosis ;
+            rdfs:comment "SCIDPM" ;
+            rdfs:label "SCIDPM" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SCID_II_Summary
+DBfN:SCID_II_Summary rdf:type owl:Class ;
+                     rdfs:subClassOf DBfN:Mental_Health_Diagnosis ;
+                     rdfs:comment "SCID_II_Summary" ;
+                     rdfs:label "SCID_II_Summary" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SCID_Summary
+DBfN:SCID_Summary rdf:type owl:Class ;
+                  rdfs:subClassOf DBfN:Mental_Health_Diagnosis ;
+                  rdfs:comment "SCID_Summary" ;
+                  rdfs:label "SCID_Summary" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SDS
+DBfN:SDS rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Negative_Symptoms ;
+         rdfs:comment "SDS" ;
+         rdfs:label "SDS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SIPS
+DBfN:SIPS rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Prodromal_Symptoms ;
+          rdfs:comment "SIPS" ;
+          rdfs:label "SIPS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SRS
+DBfN:SRS rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Social_Responsiveness ;
+         rdfs:comment "SRS" ;
+         rdfs:label "SRS" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SUMD
+DBfN:SUMD rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Insight ;
+          rdfs:comment "SUMD" ;
+          rdfs:label "SUMD" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/SchizoBipolar_Scale
+DBfN:SchizoBipolar_Scale rdf:type owl:Class ;
+                         rdfs:subClassOf DBfN:Psychopathology ;
+                         rdfs:comment "SchizoBipolar_Scale" ;
+                         rdfs:label "SchizoBipolar_Scale" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Schizotypal_Symptoms
+DBfN:Schizotypal_Symptoms rdf:type owl:Class ;
+                          rdfs:subClassOf DBfN:Genetic_Risk ;
+                          rdfs:comment "Schizotypal_Symptoms" ;
+                          rdfs:label "Schizotypal_Symptoms" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Severity_Manic_Episodes
+DBfN:Severity_Manic_Episodes rdf:type owl:Class ;
+                             rdfs:subClassOf DBfN:Clinical ;
+                             rdfs:comment "Severity_Manic_Episodes" ;
+                             rdfs:label "Severity_Manic_Episodes" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Social_Responsiveness
+DBfN:Social_Responsiveness rdf:type owl:Class ;
+                           rdfs:subClassOf DBfN:Clinical ;
+                           rdfs:comment "Social_Responsiveness" ;
+                           rdfs:label "Social_Responsiveness" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Socioeconomic_Status
+DBfN:Socioeconomic_Status rdf:type owl:Class ;
+                          rdfs:subClassOf DBfN:Demographics ;
+                          rdfs:comment "Socioeconomic_Status" ;
+                          rdfs:label "Socioeconomic_Status" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/Suicidal_Ideation
+DBfN:Suicidal_Ideation rdf:type owl:Class ;
+                       rdfs:subClassOf DBfN:Clinical ;
+                       rdfs:comment "Suicidal_Ideation" ;
+                       rdfs:label "Suicidal_Ideation" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/TCI
+DBfN:TCI rdf:type owl:Class ;
+         rdfs:subClassOf DBfN:Personality ;
+         rdfs:comment "TCI" ;
+         rdfs:label "TCI" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/UPSA
+DBfN:UPSA rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Functional_Capacity ;
+          rdfs:comment "UPSA" ;
+          rdfs:label "UPSA" .
+
+
+###  http://maven.renci.org/ontologies/databridgeforneuroscience/YMRS
+DBfN:YMRS rdf:type owl:Class ;
+          rdfs:subClassOf DBfN:Severity_Manic_Episodes ;
+          rdfs:comment "YMRS" ;
+          rdfs:label "YMRS" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge#Perfusion
+:Perfusion rdf:type owl:Class ;
+           rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Imaging_Protocol> ;
+           rdfs:label "Perfusion" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Auditory_Oddball
+<http://maven.renci.org/ontologies/neurobridge/#Auditory_Oddball> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Task_Paradigm> ;
+                                                                  rdfs:label "Auditory_Oddball" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Breath_Hold
+<http://maven.renci.org/ontologies/neurobridge/#Breath_Hold> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Task_Paradigm> ;
+                                                             rdfs:label "Breath_Hold" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Difusion
+<http://maven.renci.org/ontologies/neurobridge/#Difusion> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Structural> ;
+                                                          rdfs:label "Difusion" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#FLASH
+<http://maven.renci.org/ontologies/neurobridge/#FLASH> rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#T1> ;
+                                                       rdfs:label "FLASH" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Field_Mapping
+<http://maven.renci.org/ontologies/neurobridge/#Field_Mapping> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Imaging_Protocol> ;
+                                                               rdfs:label "Field_Mapping" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Finger_Tapping
+<http://maven.renci.org/ontologies/neurobridge/#Finger_Tapping> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Task_Paradigm> ;
+                                                                rdfs:label "Finger_Tapping" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Functional
+<http://maven.renci.org/ontologies/neurobridge/#Functional> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Imaging_Protocol> ;
+                                                            rdfs:label "Functional" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Go_NoGo
+<http://maven.renci.org/ontologies/neurobridge/#Go_NoGo> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Task_Paradigm> ;
+                                                         rdfs:label "Go_NoGo" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Imaging_Protocol
+<http://maven.renci.org/ontologies/neurobridge/#Imaging_Protocol> rdf:type owl:Class ;
+                                                                  rdfs:label "Imaging_Protocol" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#MPRAGE
+<http://maven.renci.org/ontologies/neurobridge/#MPRAGE> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#T1> ;
+                                                        rdfs:label "MPRAGE" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Mismatch_Negativity
+<http://maven.renci.org/ontologies/neurobridge/#Mismatch_Negativity> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Task_Paradigm> ;
+                                                                     rdfs:label "Mismatch_Negativity" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Resting_State
+<http://maven.renci.org/ontologies/neurobridge/#Resting_State> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Functional> ;
+                                                               rdfs:label "Resting_State" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Sensory_Motor
+<http://maven.renci.org/ontologies/neurobridge/#Sensory_Motor> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Task_Paradigm> ;
+                                                               rdfs:label "Sensory_Motor" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Sternberg_Item_Recognition_Paradigm
+<http://maven.renci.org/ontologies/neurobridge/#Sternberg_Item_Recognition_Paradigm> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Task_Paradigm> ;
+                                                                                     rdfs:label "Sternberg_Item_Recognition_Paradigm" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Structural
+<http://maven.renci.org/ontologies/neurobridge/#Structural> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Imaging_Protocol> ;
+                                                            rdfs:label "Structural" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#T1
+<http://maven.renci.org/ontologies/neurobridge/#T1> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Structural> ;
+                                                    rdfs:label "T1" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#T2
+<http://maven.renci.org/ontologies/neurobridge/#T2> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Structural> ;
+                                                    rdfs:label "T2" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Task_Paradigm
+<http://maven.renci.org/ontologies/neurobridge/#Task_Paradigm> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Functional> ;
+                                                               rdfs:label "Task_Paradigm" .
+
+
+###  http://maven.renci.org/ontologies/neurobridge/#Working_Memory
+<http://maven.renci.org/ontologies/neurobridge/#Working_Memory> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://maven.renci.org/ontologies/neurobridge/#Task_Paradigm> ;
+                                                                rdfs:label "Working_Memory" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
